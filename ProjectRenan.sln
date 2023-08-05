@@ -3,7 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33723.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectRenan", "ProjectRenan\ProjectRenan.csproj", "{7C11BE07-40CD-4B33-8C4E-BCE2C66655FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectRenan", "ProjectRenan\ProjectRenan.csproj", "{7C11BE07-40CD-4B33-8C4E-BCE2C66655FD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Web", "1 - Web", "{19033C6A-DAFE-45ED-8BD8-CF2D04D29597}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Application", "{52A52C72-2780-46D8-B788-09AC48955DCB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{4A72C8A5-ACDB-416C-9862-162BE99C65AD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infra", "4 - Infra", "{376DEFA5-08DC-4252-96C3-5F9FC53CD1FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectRenan.Application", "ProjectRenan.Application\ProjectRenan.Application.csproj", "{571D714E-2005-4B46-99F1-C8484F303ED2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectRenan.Domain", "ProjectRenan.Domain\ProjectRenan.Domain.csproj", "{51A2D7B0-28B8-4539-B67D-ECF9C648102E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectRenan.Infra", "ProjectRenan.Infra\ProjectRenan.Infra.csproj", "{580E651F-09BF-4B7B-86C1-A94948434D53}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +29,27 @@ Global
 		{7C11BE07-40CD-4B33-8C4E-BCE2C66655FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C11BE07-40CD-4B33-8C4E-BCE2C66655FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C11BE07-40CD-4B33-8C4E-BCE2C66655FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{571D714E-2005-4B46-99F1-C8484F303ED2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{571D714E-2005-4B46-99F1-C8484F303ED2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{571D714E-2005-4B46-99F1-C8484F303ED2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{571D714E-2005-4B46-99F1-C8484F303ED2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51A2D7B0-28B8-4539-B67D-ECF9C648102E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51A2D7B0-28B8-4539-B67D-ECF9C648102E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51A2D7B0-28B8-4539-B67D-ECF9C648102E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51A2D7B0-28B8-4539-B67D-ECF9C648102E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{580E651F-09BF-4B7B-86C1-A94948434D53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{580E651F-09BF-4B7B-86C1-A94948434D53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{580E651F-09BF-4B7B-86C1-A94948434D53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{580E651F-09BF-4B7B-86C1-A94948434D53}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7C11BE07-40CD-4B33-8C4E-BCE2C66655FD} = {19033C6A-DAFE-45ED-8BD8-CF2D04D29597}
+		{571D714E-2005-4B46-99F1-C8484F303ED2} = {52A52C72-2780-46D8-B788-09AC48955DCB}
+		{51A2D7B0-28B8-4539-B67D-ECF9C648102E} = {4A72C8A5-ACDB-416C-9862-162BE99C65AD}
+		{580E651F-09BF-4B7B-86C1-A94948434D53} = {376DEFA5-08DC-4252-96C3-5F9FC53CD1FB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {89CC020A-EEB5-424B-A32F-B92BC9552657}
