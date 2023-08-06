@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using ProjectRenan.Application.AutoMapper;
 using ProjectRenan.Data.Context;
 using ProjectRenan.IoC;
 
@@ -17,6 +18,8 @@ namespace ProjectRenan
             services.AddControllersWithViews();
             services.AddDbContext<ProjectRenanContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("ProjectRenanDB")).EnableSensitiveDataLogging());
             NativeInjector.RegisterServices(services);
+
+            services.AddAutoMapper(typeof(AutoMapperSetup));
 
         }
 
