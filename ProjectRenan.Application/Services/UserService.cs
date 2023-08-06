@@ -19,9 +19,26 @@ namespace ProjectRenan.Application.Services
             IEnumerable<User> _users = this.userRepository.GetAll();
 
             foreach (User item in _users)
-                userViewModels.Add(new UserViewModel { Id = item.Id, Name = item.Name, Email = item.Email });
+                userViewModels.Add(new UserViewModel
+                {
+                    Id = item.Id,
+                    Name = item.Name,
+                    Email = item.Email
+                });
 
             return userViewModels;
+        }
+
+        public bool Post(UserViewModel userViewModel)
+        {
+            User _user = new()
+            {
+                Name = userViewModel.Name,
+                Email = userViewModel.Email,
+            };
+
+            this.userRepository.Create(_user);
+            return true;
         }
     }
 }

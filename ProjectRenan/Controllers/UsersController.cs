@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ProjectRenan.Application.Interfaces;
+using ProjectRenan.Application.ViewModels;
 
 namespace ProjectRenan.Controllers
 {
@@ -16,6 +17,11 @@ namespace ProjectRenan.Controllers
         public ActionResult Get()
         {       
             return Ok(this.userService.Get());
+        }
+        [HttpPost]
+        public ActionResult Post(UserViewModel model)
+        {
+            return Ok(this.userService.Post(model));
         }
     }
 }
