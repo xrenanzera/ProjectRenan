@@ -23,5 +23,20 @@ namespace ProjectRenan.Controllers
         {
             return Ok(this.userService.Post(model));
         }
+        [HttpGet("{id}")]
+        public ActionResult GetById(string id) 
+        {
+            return Ok(this.userService.GetById(id));
+        }
+        [HttpPut]
+        public ActionResult Put(UserViewModel model)
+        {
+            return Ok(this.userService.Put(model));
+        }
+        [HttpDelete("{id}")]
+        public ActionResult DeleteById(string id)
+        {
+            return Ok(this.userService.Delete(id));
+        }
     }
 }

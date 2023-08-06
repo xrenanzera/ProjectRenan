@@ -3,6 +3,7 @@ using ProjectRenan.Application.Interfaces;
 using ProjectRenan.Application.ViewModels;
 using ProjectRenan.Domain.Entities;
 using ProjectRenan.Domain.Interfaces;
+using System.Net;
 
 namespace ProjectRenan.Application.Services
 {
@@ -38,6 +39,39 @@ namespace ProjectRenan.Application.Services
             User _user = mapper.Map<User>(userViewModel);
             this.userRepository.Create(_user);
             return true;
+        }
+
+        public UserViewModel GetById(string id) 
+        {
+            if (!Guid.TryParse(id, out var userId))
+                throw new Exception("UserID is not valid");
+
+            User _user = userRepository.GetById(userId) ??
+                                    throw new Exception("UserID not found");
+
+            return mapper.Map<UserViewModel>(_user);
+        }
+
+        public bool Put(UserViewModel userViewModel)
+        {
+            User _user = userRepository.GetById(userViewModel.Id) ??
+                                 throw new Exception("UserID not found");
+
+            _user = mapper.Map<User>(userViewModel);
+
+          return this.userRepository.Update(_user);
+        }
+
+        public bool Delete(string id)
+        {
+            if (!Guid.TryParse(id, out var userId))
+                throw new Exception("UserID is not valid");
+
+            User _user = userRepository.GetById(userId) ??
+                               throw new Exception("UserID not found");
+
+            return this.userRepository.Delete(_user);
+
         }
     }
 }
