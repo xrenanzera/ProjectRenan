@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ProjectRenan.Data.Context;
+using ProjectRenan.IoC;
 
 namespace ProjectRenan
 {
@@ -15,6 +16,7 @@ namespace ProjectRenan
         {
             services.AddControllersWithViews();
             services.AddDbContext<ProjectRenanContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("ProjectRenanDB")).EnableSensitiveDataLogging());
+            NativeInjector.RegisterServices(services);
 
         }
 
