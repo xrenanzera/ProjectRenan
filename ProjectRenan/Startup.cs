@@ -2,6 +2,7 @@
 using ProjectRenan.Application.AutoMapper;
 using ProjectRenan.Data.Context;
 using ProjectRenan.IoC;
+using ProjectRenan.Swagger;
 
 namespace ProjectRenan
 {
@@ -20,6 +21,7 @@ namespace ProjectRenan
             NativeInjector.RegisterServices(services);
 
             services.AddAutoMapper(typeof(AutoMapperSetup));
+            services.AddSwaggerConfiguration();
 
         }
 
@@ -31,6 +33,8 @@ namespace ProjectRenan
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+
+            app.UseSwaggerConfiguration();
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();

@@ -41,6 +41,7 @@
     <ProjectReference Include="..\ProjectRenan.Application\ProjectRenan.Application.csproj" />
     <ProjectReference Include="..\ProjectRenan.Infra\ProjectRenan.Data.csproj" />
     <ProjectReference Include="..\ProjectRenan.IoC\ProjectRenan.IoC.csproj" />
+    <ProjectReference Include="..\ProjectRenan.Swagger\ProjectRenan.Swagger.csproj" />
   </ItemGroup>
 
     <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
