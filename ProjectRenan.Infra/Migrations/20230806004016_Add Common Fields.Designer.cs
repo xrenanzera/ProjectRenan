@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ProjectRenan.Data.Context;
 
@@ -11,9 +12,11 @@ using ProjectRenan.Data.Context;
 namespace ProjectRenan.Data.Migrations
 {
     [DbContext(typeof(ProjectRenanContext))]
-    partial class ProjectRenanContextModelSnapshot : ModelSnapshot
+    [Migration("20230806004016_Add Common Fields")]
+    partial class AddCommonFields
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -53,7 +56,7 @@ namespace ProjectRenan.Data.Migrations
                         new
                         {
                             Id = new Guid("3c666d3e-80ea-4470-b420-ad35533655cd"),
-                            DateCreated = new DateTime(2023, 6, 14, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            DateCreated = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "user.default@projectrenan.com",
                             IsDeleted = false,
                             Name = "User Default"

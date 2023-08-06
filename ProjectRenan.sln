@@ -23,11 +23,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1 - Data", "4.1 - Data", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2 - CrossCutting", "4.2 - CrossCutting", "{CE75D1AD-8B50-49A7-83EB-31C3FFF95B2D}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{99A971DE-4254-4104-8B2A-FA60ACF94ADC}"
-	ProjectSection(SolutionItems) = preProject
-		.editorconfig = .editorconfig
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectRenan.IoC", "ProjectRenan.IoC\ProjectRenan.IoC.csproj", "{440D79C5-96D4-4EBC-AC91-A1EC2DB5F991}"
 EndProject
 Global

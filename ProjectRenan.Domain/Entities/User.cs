@@ -1,8 +1,9 @@
-﻿namespace ProjectRenan.Domain.Entities
+﻿using ProjectRenan.Domain.Models;
+
+namespace ProjectRenan.Domain.Entities
 {
-    public class User
+    public class User: Entity
     {
-        public Guid Id { get; set; }
         public string? Name { get; set; }
         public string? Email { get; set; }
     }

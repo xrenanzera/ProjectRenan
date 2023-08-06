@@ -14,9 +14,8 @@ namespace ProjectRenan.Controllers
         }
         [HttpGet]
         public ActionResult Get()
-        {
-            this.userService.Test();
-            return Ok("Ok");
+        {       
+            return Ok(this.userService.Get());
         }
     }
 }

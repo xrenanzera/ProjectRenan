@@ -10,8 +10,15 @@ namespace ProjectRenan.Data.Extensions
             //a cada migration executado, insere um usuário padrão
             builder.Entity<User>()
                 .HasData(
-                new User { Id = Guid.Parse("3c666d3e-80ea-4470-b420-ad35533655cd"), Name = "User Default", Email = "user.default@projectrenan.com" }
-                );
+                new User
+                {
+                    Id = Guid.Parse("3c666d3e-80ea-4470-b420-ad35533655cd"),
+                    Name = "User Default",
+                    Email = "user.default@projectrenan.com",
+                    DateCreated = new DateTime(2023, 06, 14),
+                    DateUpdated = null,
+                    IsDeleted = false
+                }); 
 
             return builder;
         }

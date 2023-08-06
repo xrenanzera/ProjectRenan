@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ProjectRenan.Data.Context;
 
@@ -11,9 +12,11 @@ using ProjectRenan.Data.Context;
 namespace ProjectRenan.Data.Migrations
 {
     [DbContext(typeof(ProjectRenanContext))]
-    partial class ProjectRenanContextModelSnapshot : ModelSnapshot
+    [Migration("20230806004345_Update Default User")]
+    partial class UpdateDefaultUser
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

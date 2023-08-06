@@ -12,6 +12,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ProjectRenan.Application\ProjectRenan.Application.csproj" />
+    <ProjectReference Include="..\ProjectRenan.Domain\ProjectRenan.Domain.csproj" />
+    <ProjectReference Include="..\ProjectRenan.Infra\ProjectRenan.Data.csproj" />
   </ItemGroup>
 
 </Project>

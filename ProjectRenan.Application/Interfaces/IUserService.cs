@@ -1,7 +1,9 @@
-﻿namespace ProjectRenan.Application.Interfaces
+﻿using ProjectRenan.Application.ViewModels;
+
+namespace ProjectRenan.Application.Interfaces
 {
     public interface IUserService
     {
-        void Test();
+        List<UserViewModel> Get();
     }
 }
