@@ -22,8 +22,6 @@ namespace ProjectRenan.Data.Repositories
             this._context = context;
         }
 
-        #region 'Methods: Create/Update/Remove/Save'
-
         public TEntity Create(TEntity model)
         {
             try
@@ -166,11 +164,6 @@ namespace ProjectRenan.Data.Repositories
                 throw;
             }
         }
-
-        #endregion
-
-        #region 'Methods: Search'
-
         public TEntity Find(params object[] Keys)
         {
             try
@@ -244,10 +237,6 @@ namespace ProjectRenan.Data.Repositories
                 throw;
             }
         }
-
-        #endregion
-
-        #region 'Assyncronous Methods'
 
         public async Task<TEntity> CreateAsync(TEntity model)
         {
@@ -344,10 +333,6 @@ namespace ProjectRenan.Data.Repositories
             }
         }
 
-        #endregion
-
-        #region 'Search Methods Async'
-
         public async Task<TEntity> GetAsync(params object[] Keys)
         {
             try
@@ -373,9 +358,6 @@ namespace ProjectRenan.Data.Repositories
                 throw;
             }
         }
-
-        #endregion
-
 
         public void Dispose()
         {
