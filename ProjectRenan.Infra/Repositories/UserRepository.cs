@@ -12,12 +12,7 @@ namespace ProjectRenan.Data.Repositories
 
         public IEnumerable<User> GetAll()
         {
-           return Query(x => !x.IsDeleted);
-        }
-
-        public User GetById(Guid userId)
-        {
-            return Find(x => x.Id == userId && !x.IsDeleted);
+            return Query(x => !x.IsDeleted);
         }
     }
 }

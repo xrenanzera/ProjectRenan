@@ -25,7 +25,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2 - CrossCutting", "4.2 -
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectRenan.IoC", "ProjectRenan.IoC\ProjectRenan.IoC.csproj", "{440D79C5-96D4-4EBC-AC91-A1EC2DB5F991}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectRenan.Swagger", "ProjectRenan.Swagger\ProjectRenan.Swagger.csproj", "{9EB2D081-DAC1-4163-93A3-E8732130F42E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectRenan.Swagger", "ProjectRenan.Swagger\ProjectRenan.Swagger.csproj", "{9EB2D081-DAC1-4163-93A3-E8732130F42E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectRenan.Auth", "ProjectRenan.Auth\ProjectRenan.Auth.csproj", "{8CA4D71C-6264-44A7-B39F-245CF702329A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Tests", "0 - Tests", "{BBAD1D37-839D-4DAA-97E4-81105EFF8FA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectRenan.Application.Tests", "ProjectRenan.Application.Tests\ProjectRenan.Application.Tests.csproj", "{52821E7D-BCF2-400A-8CCB-F28176C7D885}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +63,14 @@ Global
 		{9EB2D081-DAC1-4163-93A3-E8732130F42E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9EB2D081-DAC1-4163-93A3-E8732130F42E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9EB2D081-DAC1-4163-93A3-E8732130F42E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CA4D71C-6264-44A7-B39F-245CF702329A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CA4D71C-6264-44A7-B39F-245CF702329A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CA4D71C-6264-44A7-B39F-245CF702329A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CA4D71C-6264-44A7-B39F-245CF702329A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52821E7D-BCF2-400A-8CCB-F28176C7D885}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52821E7D-BCF2-400A-8CCB-F28176C7D885}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52821E7D-BCF2-400A-8CCB-F28176C7D885}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52821E7D-BCF2-400A-8CCB-F28176C7D885}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -70,6 +84,8 @@ Global
 		{CE75D1AD-8B50-49A7-83EB-31C3FFF95B2D} = {376DEFA5-08DC-4252-96C3-5F9FC53CD1FB}
 		{440D79C5-96D4-4EBC-AC91-A1EC2DB5F991} = {CE75D1AD-8B50-49A7-83EB-31C3FFF95B2D}
 		{9EB2D081-DAC1-4163-93A3-E8732130F42E} = {CE75D1AD-8B50-49A7-83EB-31C3FFF95B2D}
+		{8CA4D71C-6264-44A7-B39F-245CF702329A} = {CE75D1AD-8B50-49A7-83EB-31C3FFF95B2D}
+		{52821E7D-BCF2-400A-8CCB-F28176C7D885} = {BBAD1D37-839D-4DAA-97E4-81105EFF8FA5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {89CC020A-EEB5-424B-A32F-B92BC9552657}

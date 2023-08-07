@@ -1,9 +1,7 @@
 ﻿namespace ProjectRenan.Application.ViewModels
 {
-    public class UserViewModel
+    public class UserAuthenticateRequestViewModel
     {
-        public Guid Id { get; set; }
-        public string Name { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
     }
