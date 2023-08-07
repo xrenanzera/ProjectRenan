@@ -34,6 +34,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="ClientApp\src\app\services\user.service.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="..\.editorconfig" Link=".editorconfig" />
   </ItemGroup>
 
@@ -42,6 +46,10 @@
     <ProjectReference Include="..\ProjectRenan.Infra\ProjectRenan.Data.csproj" />
     <ProjectReference Include="..\ProjectRenan.IoC\ProjectRenan.IoC.csproj" />
     <ProjectReference Include="..\ProjectRenan.Swagger\ProjectRenan.Swagger.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\src\app\services\user.service.ts" />
   </ItemGroup>
 
     <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">

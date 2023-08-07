@@ -1,0 +1,21 @@
+<p>Users ({{users.length}})</p>
+
+<table class="table">
+  <thead>
+    <tr>
+    <th scope="col">Actions</th>
+      <th scope="col">ID</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users">
+        <th scope="row"><button class="btn-primary">Edit</button></th>
+      <th scope="row">{{user.Id}}</th>
+      <th scope="row">{{user.name}}</th>
+      <th scope="row">{{user.email}}</th>
+    </tr>
+    <tr>
+  </tbody>
+</table>

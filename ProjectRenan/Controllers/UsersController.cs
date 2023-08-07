@@ -7,7 +7,7 @@ using System.Security.Claims;
 
 namespace ProjectRenan.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/users")]
     [ApiController, Authorize]
     public class UsersController : ControllerBase
     {
@@ -16,7 +16,7 @@ namespace ProjectRenan.Controllers
         {
             this.userService = userService;
         }
-        [HttpGet]
+        [HttpGet, AllowAnonymous]
         public ActionResult Get()
         {
             return Ok(this.userService.Get());
